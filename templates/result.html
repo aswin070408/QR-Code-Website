@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>QR Generated</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>QR Code Generated</h1>
+
+    <img src="{{ url_for('static', filename='qr/qr.png') }}"
+         width="250">
+
+    <br><br>
+
+    <h3>{{ filename }}</h3>
+
+    <a href="{{ file_link }}" target="_blank">
+
+        <button>
+            Open File
+        </button>
+
+    </a>
+
+    <br><br>
+
+    <a href="/">
+
+        <button>
+            Upload Another File
+        </button>
+
+    </a>
+
+</div>
+
+</body>
+</html>

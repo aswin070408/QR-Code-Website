@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>QR File Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>QR File Generator</h1>
+
+    <p>Upload a file and generate its QR Code.</p>
+
+    <form action="/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <input type="file"
+               name="file"
+               required>
+
+        <br><br>
+
+        <button type="submit">
+            Generate QR Code
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
